@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex
+% Author : Kiran Bangalore Ravindra
+% Date : 18th September 2017
+% License : GNU General Public License
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[\null] 
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% -----------Begin resume-------------------
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/kiran-bangalore-ravindra/}{\Large Kiran Ravindra}} & Email : \href{mailto:ravin047@umn.edu}{ravin047@umn.edu}\\
+  \href{https://www.linkedin.com/in/kiran-bangalore-ravindra/}{https://www.linkedin.com/in/kiran-bangalore-ravindra/} & Mobile : +1-510-857-3701 \\
+\end{tabular*}
+
+%--------Objective-----------------
+
+\section{Objective}
+    \resumeSubHeadingListStart{\textbf{Seeking summer internship opportunities.}}
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Minnesota-Twin Cities}{Minneapolis, MN}
+      {Master of Science in Computer Science }{Sept. 2017 -- Expected May. 2019}
+    
+    \resumeSubheading
+      {Visvesvaraya Technological University}{Karnataka, India}
+      {Bachelor of Engineering in Computer Science,  GPA: 3.64 (9.1/10.0)}{Sept. 2011 -- June. 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Applied Materials India Pvt Ltd}{Bangalore, IN}
+      {Software Developer}{July. 2015 - July. 2017}
+    \resumeSubHeadingListEnd
+      \resumeItemListStart
+        \resumeItem{Design and Development}
+          {Collaborated in design and development of Nanoparticle Defect Detection Software, UVision -Responsible for Image creation, Segmentation and Automated Classification of defects on a silicon chip.}
+        \resumeItem{Alignment Algorithm}
+          {Served as software owner for the Next Generation Alignment Algorithm – Is accurate up to 98\% in finding defects.}
+        \resumeItem{Device Synchronization}
+          {Implemented the synchronization framework in Java for Laser device. 
+          }
+        \resumeItem{Optimization}
+          {Spearheaded the focus group to optimize the power up time of UVision software by 2.5min.}
+        \resumeItem{Version Control}
+          {Go to person for the newly implemented Source Code Management system queries}
+        \resumeItem{Unit Test Framework}
+          {Researched and proposed Evosuite as the Open source solution for Automatic Unit Test Generation.}
+        \resumeItem{Research group}
+          {Brain stormed and evaluated new algorithms to automate Defect Classification process.}
+        \resumeItem{Technical talks}  
+          {Delivered technical talks on Machine Learning and RTC at internal Developer conference.
+          }
+      \resumeItemListEnd
+      
+      
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeItemListStart
+    \resumeItem{Perceptual Computing}
+       {A software to detect Human Emotions based on Natural Language, Keyboard Typing Pattern and Facial image features. Implemented in Python.}
+    \resumeItem{Audio Recognition}
+      {Recognize a person’s identity by his voice using LBG vector quantization based clustering algorithm. The algorithm generates code vector for each of the samples based on least distortion criteria. The model is trained with unsupervised learning approach and is accurate upto 82\%.}
+    \resumeItem{Recommendation System}
+      {Movie recommender using product association recommender system.}
+    \resumeItem{Asynchronous Client-Server Application}
+    {Asynchronous TCP Server application that collects logistics from dynamic connected components of a network. The server possesses ability to configure threshold parameters on client and display the real-time graphs for CPU and memory utilization of remote processes.}
+    \resumeItem{Compilers}
+      {Implemented LR1 parser for Deterministic Context Free grammar}
+    \resumeItem{EnVision}
+      {Designed and developed wafer inspection simulator tool to identify defects in silicon wafer Fabrication.}
+     \resumeItem{Video Game} {A menu driven car race video game using `graphics' library of C++.}
+    
+  \resumeItemListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeItemListStart
+    \resumeItem{Languages}
+    {Java, Python, C++, SQL, JavaScript}
+     \resumeItem{Skills and Technologies}
+     {Core Java, Multithreading, REST, gradle, Git, RTC, JUnit, Agile , Quest, Django }
+     \resumeItem{Subject of Interest}
+     {Machine Learning, Recommendation, Computer Vision, NLP, Algorithms, Design Patterns,React,Linux}
+     \resumeItem{Libraries}
+    {NLTK, Matplotlib, NumPy, TensorFlow, Lenskit}
+ \resumeItemListEnd
+
+%
+%--------My Publications------------
+\section{Publication}
+\resumeItemListStart
+  \resumeItem{A Multimodal Approach to Detect User's Emotion}{Nov 2015}
+    {Published Journal, Elsevier Procedia Computer Science, Volume 70, 2015, Pages 296 – 303. $(doi:10.1016/j.procs.2015.10.096)$\\
+     }
+\resumeItemListEnd
+
+     
+
+%-------------------------------------------
+\end{document}
